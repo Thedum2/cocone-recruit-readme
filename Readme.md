@@ -16,10 +16,10 @@
 ---
 
 # 프로젝트 A: 개발한입 (숏폼 학습 플랫폼)
+<img width="2353" height="1310" alt="Frame 3 (1)" src="https://github.com/user-attachments/assets/b3ee18d7-5e2c-40ef-bdc4-d992603f0ddb" />
 10-25초 분량의 숏폼으로 개발 지식을 학습하는 마이크로러닝 플랫폼
 
 #### **💻서비스 링크**: https://devonebite.xyz
-
 
 * **기간**: 2025.11 ~ 2026.01 (3개월)
 * **팀**: 2인 개발
@@ -43,7 +43,7 @@
 ---
 
 ## ① AI를 활용해 해결한 문제/자동화 - 12,400개 콘텐츠 자동 생성
-
+<img width="503" height="797" alt="image" src="https://github.com/user-attachments/assets/56574500-40f3-4e3b-8a40-8e62ba266706" />
 ### 문제 상황
 개발한입 프로젝트는 개발자들이 출퇴근 시간이나 짧은 휴식 시간에 빠르게 지식을 습득할 수 있도록 돕는 서비스입니다. 이를 위해 대량의 콘텐츠가 필요했습니다.
 
@@ -509,7 +509,8 @@ SK텔레콤의 소셜 메타버스 플랫폼 **ifland** 클라이언트 개발�
 - 최대 **131명 동시 참여** 지원
 ---
 
-## 사례 1: 환각(Hallucination) - 존재하지 않는 API 제안
+## 사례 : 환각(Hallucination) - 존재하지 않는 API 제안
+![Uploading image.png…]()
 
 배경
 볼류메트릭 콘서트 기능 개발 중 Microsoft MRCS 통합 과정에서 알 수 없는 에러 발생. 50줄 이상의 스택 트레이스로 원인 파악이 어려운 상황.
