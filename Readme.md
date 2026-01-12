@@ -313,6 +313,7 @@ JavaScript 코드 팁 10개를 JSON으로 만들어줘
 * **기간**: 2025.07 ~ 진행 중
 * **팀**: 1인 개발
 
+#### **💻서비스 링크(개발서버,개발 중)**: https://dev.galashow.xyz
 ### 역할 및 기여도
 
 | 영역 | 본인 기여도 | AI 활용 |
@@ -333,6 +334,10 @@ JavaScript 코드 팁 10개를 JSON으로 만들어줘
 ---
 
 ## ⑥ AI를 활용한 프로토타입 제작 - 72시간만에 만든 MVP
+<img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/4c9d986a-5167-4c4c-8aa4-e0f8318d8181" />
+<img width="1912" height="930" alt="image" src="https://github.com/user-attachments/assets/c5a07d12-7191-43a9-b4f6-71c5e00ef6c3" />
+<img width="1916" height="942" alt="image" src="https://github.com/user-attachments/assets/b453b9c1-ad03-46f5-b071-b0d07ea0f3ad" />
+<img width="1922" height="933" alt="image" src="https://github.com/user-attachments/assets/ab53014b-bb37-4e9d-84a2-4bb6346b1047" />
 
 ### 프로젝트 배경
 혼자서 **기획-디자인-프론트엔드-백엔드-게임 개발**을 모두 담당해야 하는 상황에서, 전통적인 방식으로는 최소 1년 이상이 예상되었습니다. 특히 3D 에셋 제작과 화면 디자인은 외주 의뢰 없이는 불가능해 보였습니다.  
