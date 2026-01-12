@@ -424,7 +424,7 @@ TypeScript 어댑터 인터페이스 제안해줘.
 | YouTube | HTTP Polling | JSON | API Key |
 | SOOP(아프리카TV) | WebSocket | JSON | Session |
 
-<img width="1912" height="1028" alt="image" src="https://github.com/user-attachments/assets/91f1ccb2-7ff4-46b5-9d03-8969d1ed9722" />
+![501994260-0ac6b384-47d3-4059-a618-0bba199ecee7](https://github.com/user-attachments/assets/1a80be14-c2ea-4f4b-9232-85ab7c79e2ae)
 
 
 **공통 인터페이스 제안** (80% 채택):
