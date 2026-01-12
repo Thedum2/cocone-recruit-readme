@@ -543,7 +543,7 @@ MRCSConfig.EnableAutoRetry()를 true로 설정하면
 
 개선된 프롬프트
 ```
-markdownMicrosoft MRCS Unity SDK 1.2.3 기준으로 에러 해결 방법 알려줘:
+Microsoft MRCS Unity SDK 1.2.3 기준으로 에러 해결 방법 알려줘:
 [에러 로그]
 
 ⚠️ 제약사항:
