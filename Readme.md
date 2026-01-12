@@ -44,7 +44,9 @@
 
 ## ① AI를 활용해 해결한 문제/자동화 - 12,400개 콘텐츠 자동 생성
 <img width="503" height="797" alt="image" src="https://github.com/user-attachments/assets/56574500-40f3-4e3b-8a40-8e62ba266706" />
+
 ### 문제 상황
+
 개발한입 프로젝트는 개발자들이 출퇴근 시간이나 짧은 휴식 시간에 빠르게 지식을 습득할 수 있도록 돕는 서비스입니다. 이를 위해 대량의 콘텐츠가 필요했습니다.
 
 62개 기술 카테고리에 각 200개씩 **총 12,400개 콘텐츠**를 생성해야 했습니다. 각 콘텐츠는 5가지 타입(code_tip, bug_challenge, interview, code_review, meme)으로 구성됩니다.
@@ -263,6 +265,7 @@ JavaScript 코드 팁 10개를 JSON으로 만들어줘
 ```
 개선 사항
 * 100개 샘플 분석으로 실패 패턴을 찾아내고, 성공 예시 3개 + 구조화된 형식(제목 20자/본문 80자/요약 15자)을 명시했습니다.
+  
 남은 문제
 * 정량적 기준(글자 수, 구조)은 잘 지켰지만 톤앤매너 같은 정성적 요소에서 여전히 15%정도 불일치했습니다.
 
@@ -342,13 +345,8 @@ _AI를 파트너로 활용하면 어디까지 가능할까? 라는 고민과 함
 - ✅ Twitch 채팅 연동
 - ✅ 기본적 게임 API제작
 
-**태스크**
-- Unity WebGL + React 통신
-- 5개 독립 레포지토리 연결
-- 확장 가능한 미니게임 프레임워크
-
 ### AI 활용 전략 
-**Claude Opus 4.5로 아키텍처 설계**
+### **Claude Opus 4.5로 아키텍처 설계**
 
 ```markdown
 다음 요구사항을 만족하는 시스템 아키텍처를 3가지 안으로 제시해줘:
@@ -379,7 +377,7 @@ _AI를 파트너로 활용하면 어디까지 가능할까? 라는 고민과 함
 * **최종 선택** -> 멀티레포
 *  **효과**: 아키텍처 설계 4시간 → 30분으로 단축
 
-**React <->Unity** 간 통신 프로토콜 설계
+### **React <->Unity** 간 통신 프로토콜 설계
 ```
 [프롬프트] 
 React WebApp에 Unity WebGL을 임베드하고 양방향 통신하는 시스템을 설계해줘. 
@@ -391,7 +389,7 @@ React WebApp에 Unity WebGL을 임베드하고 양방향 통신하는 시스템�
 	* https://yellow-candle-643.notion.site/3-2-RGF-React-2e6fbe9c2f9b806795bef3f8af4cf743?source=copy_link
 
 
-**Meshy.ai로 3D 에셋 자동 생성**
+### **Meshy.ai로 3D 에셋 자동 생성**
 ```
 [프롬프트]
 Create a 3D model of a vintage trolley train 
@@ -402,9 +400,12 @@ for a moral dilemma game. Low poly style.
 - 텍스처: 512x512
 - 소요 시간: **5분** (직접 모델링 시 2주 예상)
 
-**멀티 플랫폼 채팅 통합 라이브러리 제작 (Gemini로 API 문서 분석)**
+### **멀티 플랫폼 채팅 통합 라이브러리 제작 (Gemini로 API 문서 분석)**
+
 스트리머들이 플랫폼 선택 고민으로 멀티 스트리밍을 하면서 발생하는 채팅 분산 문제를 해결하기 위해 만들었습니다.  
+
 각 플랫폼마다 채팅 API 방식이 다르고,제약이 다르기 때문에, 하나하나 구현하기에도 무리가 있다고 판단해서,모든 플랫폼 채팅을 **하나의 통일된 방식으로 받을 수 있는 어댑터 라이브러리를 제작**했습니다.
+
 ```markdown
 [프롬프트 to Gemini]
 다음 3개 플랫폼의 채팅 API 비교:
@@ -450,35 +451,23 @@ interface ChatMessage {
 | AI 도구 | 사용 시간 | 주요 용도 |
 |---------|----------|---------------|
 | Claude Opus 4.5 | 2시간 | 아키텍처 |
-| Claude Code | 8시간 | 핵심 로직 구현|
+| Claude Code | 8시간 | 핵심 로직(React <->Unity** 간 통신 프로토콜) 구현|
 | Meshy.ai | 1시간  | 3D 에셋 |
 | Gemini | 3시간  | API 문서 분석 및 인터페이스 생성 |
 | **합계** | **14시간**  | - |
 
-### 개발 시간 분석
-```
-총 개발 시간: 68시간 (목표 72시간, 6% 단축)
+### 성과 및 개발 시간 분석
 
-AI 절약 시간:
-- 아키텍처 설계: 4h → 0.5h (3.5h 절약)
-- 3D 에셋 제작: 336h → 1h (335h 절약)
-- 보일러플레이트: 10h → 2h (8h 절약)
-- API 문서 분석 및 어댑터 인터페이스 제작: 8h → 1h (7h 절약)
-
-총 절약: 약 354시간
-AI 없이 예상: 약 420시간 (10.5주)
-```
----
-
-
-### 성과
-
-- 문서 분석 시간: 8시간 → 1시간 (87% 단축)
-- 통합 작업 시간: 1주예상→ 2일 (71% 단축)
-	- 데모버전 완성 완료
-- API 호출 비용: 60% 절감
-- npm 패키지로 공개 (https://www.npmjs.com/package/polychat-bridge)
-- 재사용 가능한 인터페이스 확립
+ AI 효과 분석
+   - AI 미사용 시 예상: 420시간
+   - 실제 소요: 68시간
+   - 절감률: 83.8% (352시간 절약)
+   
+주요 절약 항목:
+- 3D 에셋 생성: 335h (AI 이미지 생성)
+- API 통합: 7h (문서 자동 분석)
+- 보일러플레이트: 8h (코드 자동 생성)
+- 아키텍처 설계: 3.5h (구조 제안)
 
 ---
 
@@ -510,10 +499,11 @@ SK텔레콤의 소셜 메타버스 플랫폼 **ifland** 클라이언트 개발�
 ---
 
 ## 사례 : 환각(Hallucination) - 존재하지 않는 API 제안
-![Uploading image.png…]()
+<img width="1280" height="606" alt="image" src="https://github.com/user-attachments/assets/e42e1247-ce59-4f48-9657-692d6e89cdb5" />
 
-배경
-볼류메트릭 콘서트 기능 개발 중 Microsoft MRCS 통합 과정에서 알 수 없는 에러 발생. 50줄 이상의 스택 트레이스로 원인 파악이 어려운 상황.
+배경 
+
+- 볼류메트릭 콘서트 기능 개발 중 Microsoft MRCS 통합 과정에서 알 수 없는 에러 발생. 50줄 이상의 스택 트레이스로 원인 파악이 어려운 상황.
 
 ```markdown
 csharp[ERROR] MRCSStreamingException: Failed to initialize volumetric stream
@@ -537,7 +527,7 @@ MRCSConfig.EnableAutoRetry()를 true로 설정하면
 ```
 
 **환각 발견**
--  `MRCSConfig.EnableAutoRetry()` → ❌ **공식 문서에 존재하지 않는 API**
+-  `MRCSConfig.EnableAutoRetry()` → ❌!!!**공식 문서에 존재하지 않는 API**
 
 **해결 방법으로 검증 시스템 도입**
 
